@@ -1,0 +1,29 @@
+.navbar-container {
+    width: 100%;
+    height: 100%;
+    max-width: 90rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex
+;
+}
+
+.navbar-right {
+    display: flex;
+}
+
+.navbar-main{
+    display: flex;
+}
+
+nav .navbar-link {
+    display: flex;
+}
+
+.header{
+    border: 2px solid black;
+    height: 100vh;
+    width: 100%;
+}
