@@ -97,16 +97,18 @@ ul li a:hover{
     background: rgb(238, 82, 103);
     border: 2px solid rgb(238, 82, 103);
     margin-top: 34px;
-    color: white;
     font-size: 15px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     cursor: pointer;
+    transition: 0.5s ease;
+    color: white;
 }
 
 .btn:hover{
     color: black;
     background-color: white;
+    transition: 0.5s ease;
 }
 .btn:focus{
     outline: none;
@@ -150,23 +152,19 @@ ul li a:hover{
     font-size: 18px;
     border-radius: 10px;
     cursor: pointer;
-    transition: 0.3s ease;
+    transition: 0.5s ease;
 }
 
 .content .cn a{
     text-decoration: none;
-    color: white;
-    transition: 0.3s ease;
+    color: black;
 }
 
 .cn:hover,
 .cn a:hover{
     color: black;
     background-color: white;
-}
-
-.cn a:hover{
-    color: black;
+    transition: 0.5s ease;
 }
 
 .content span{
@@ -231,11 +229,13 @@ ul li a:hover{
     border-radius: 10px;
     cursor: pointer;
     color: white;
+    transition: 0.5s ease;
 }
 
 .btnn:hover{
     color: black;
     background-color: white;
+    transition: 0.5s ease;
 }
 
 .btnn a{
