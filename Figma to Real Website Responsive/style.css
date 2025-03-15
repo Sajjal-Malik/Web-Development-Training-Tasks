@@ -26,11 +26,12 @@ body{
 .btn{
     padding: 16px 32px;
     border-radius: 24px;
-    color: #fff;
+    color: #ffffff;
     display: inline-block;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     position: relative;
+    text-decoration: none;
 }
 
 .btn.dark{
@@ -45,7 +46,7 @@ body{
     content: url('images/icons8-edit-48.png');
     position: absolute;
     top: 50%;
-    left: 15px;
+    left: 10px;
     transform: translateY(-50%);
 }
 
@@ -60,16 +61,22 @@ header{
     width: 100%;
 }
 
+/* Navbar Properties */
+
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 1134px;
+    top: 32px;
+    z-index: 100;
 }
 
 nav .logo{
     font-weight: 900;
     font-size: 40px;
-    color: #fff;
+    color: #ffffff;
 }
 
 nav ul{
@@ -86,5 +93,106 @@ nav ul li a{
     font-size: 16px;
     line-height: 24px;
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
+}
+
+/* Hero Section */
+
+.hero-section{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+.hero-section .left{
+    flex: 1;
+}
+
+.hero-section .left h1{
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 125%;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+.hero-section .left p{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 200%;
+    color: #ffffff;
+    margin-bottom: 30px;
+    width: 457px;
+}
+
+.hero-section .right{
+    align-self: flex-end;
+}
+
+.hero-section .right img{
+    height: 600px;
+    width: 200px;
+    margin-right: 100px;
+    vertical-align: middle;
+}
+
+/* Achievement Cards */
+
+.achievement-card{
+    position: absolute;
+    min-width: 200px;
+}
+
+.achievement-card .content{
+    border-radius: 24px;
+    background: #ffffff;
+    padding: 8px 32px;
+    z-index: 10;
+    position: relative;
+}
+
+.achievement-card .content div{
+    display: flex;
+}
+
+.achievement-card.students-enrolled{
+    left: 49%;
+    top: 270px;
+}
+
+.achievement-card.overall-rating{
+    left: 47%;
+    top: 470px;
+}
+
+
+.achievement-card h3{
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--dark-blue-color);
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.achievement-card p{
+    font-weight: normal;
+    font-size: 16px;
+    color: var(--dark-blue-color);
+    margin-top: -1px;
+    margin-bottom: 8px;
+}
+
+.achievement-card .bg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, #6f7dfb 0%, #3b88bf 100%);
+    border-radius: 24px;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
 }
