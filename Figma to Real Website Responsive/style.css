@@ -688,5 +688,17 @@ footer .copywright{
 }
 
 @media(max-width: 800px) {
-    
+    nav{
+        display: none;
+    }
+
+    nav.mobile-nav{
+        display: flex;
+    }
+
+    nav.mobile-nav.scrolled{
+        padding: 8px 100px;
+        background: var(--light-blue-color);
+        box-shadow: 0 9px 21px -5px rgba(0, 0, 0, 0.3);
+    }
 }
